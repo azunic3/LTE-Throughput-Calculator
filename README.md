@@ -1,8 +1,8 @@
 #  LTE Throughput Calculator
 
  A simple **LTE Throughput Calculator** built with **React (Vite) and Node.js (Express)**.  
-It calculates LTE **downlink throughput** based on bandwidth, frequency, cyclic prefix,  
-and distance using the **Free Space Path Loss model** and LTE **SINR-to-MCS mapping**.
+It calculates LTE downlink throughput based on bandwidth, frequency, cyclic prefix,  
+and distance using the Free Space Path Loss model and LTE SINR-to-MCS mapping.
 
 ---
 

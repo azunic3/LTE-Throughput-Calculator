@@ -38,11 +38,11 @@ where:
 - `P_n` = Noise + Interference (-110 dBm)
 
 ###  LTE Throughput Calculation
-T = BW × Spectral Efficiency
+T = BW × Efficiency factor
 
 where:
 - `BW` = Bandwidth (MHz)
-- Spectral efficiency is mapped based on **SINR values**  
+-  Efficiency factor is mapped based on **SINR values**  
 
 ---
 ##  How to Run
@@ -56,11 +56,13 @@ npm install
 
 
 ###  Start the Backend (Node.js)
-cd server node server.js
+cd server 
+npm run dev
 
 
 ###  Start the Frontend (React)
 cd client 
+npm install
 npm run dev
 
 

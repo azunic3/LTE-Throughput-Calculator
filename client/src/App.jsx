@@ -20,10 +20,6 @@ function App() {
   const validateInputs = () => {
     const { bandwidth, frequency, distance } = inputs;
     
-    if (bandwidth <= 0 || bandwidth > 100) {
-      return "Bandwidth must be between 1 and 100 MHz.";
-    }
-    
     if (frequency < 400 || frequency > 6000) {
       return "Frequency must be between 400 MHz and 6000 MHz.";
     }
@@ -68,7 +64,15 @@ function App() {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Bandwidth (MHz):</label>
-          <input type="number" name="bandwidth" value={inputs.bandwidth} onChange={handleChange} required />
+          <select name="bandwidth" value={inputs.bandwidth} onChange={handleChange}>
+            <option value={1.4}>1.4 MHz</option>
+            <option value={3}>3 MHz</option>
+            <option value={5}>5 MHz</option>
+            <option value={10}>10 MHz</option>
+            <option value={15}>15 MHz</option>
+            <option value={20}>20 MHz</option>
+          </select>
+
         </div>
         <div>
           <label>Frequency Band (MHz):</label>
